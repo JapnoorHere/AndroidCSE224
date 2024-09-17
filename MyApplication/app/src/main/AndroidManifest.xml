@@ -13,6 +13,15 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Consytraint"
+            android:exported="false" />
+        <activity
+            android:name=".RadioButtonAndCheckButtons"
+            android:exported="true" />
+        <activity
+            android:name=".Calculator"
+            android:exported="false" />
+        <activity
             android:name=".Lecture3RelativeLayout"
             android:exported="true" />
         <activity
