@@ -39,6 +39,8 @@
         />
 
     <Button
+        android:id="@+id/clearBtn"
+        android:layout_marginBottom="10dp"
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

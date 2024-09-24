@@ -20,7 +20,7 @@ class ListView : AppCompatActivity() {
         var et = findViewById<EditText>(R.id.et)
         var btn = findViewById<Button>(R.id.btn)
         var lv = findViewById<ListView>(R.id.lv)
-
+        var clearBtn = findViewById<Button>(R.id.clearBtn)
         var list = ArrayList<String>();
 
         var listAdapter: ArrayAdapter<String> = ArrayAdapter(this,android.R.layout.simple_list_item_1,list)
@@ -35,9 +35,14 @@ class ListView : AppCompatActivity() {
                 list.add(et.text.toString());
                 listAdapter.notifyDataSetChanged()
                 et.text.clear()
-                println(list)
+
             }
 
+        }
+
+        clearBtn.setOnClickListener{
+            list.clear()
+            listAdapter.notifyDataSetChanged()
         }
 
         //Adapters act as bridge between xml and kotlin
