@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.RadioGroup
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,7 +19,7 @@ class RadioButtonAndCheckButtons : AppCompatActivity() {
         var checkBox1 = findViewById<CheckBox>(R.id.checkBox1)
         var checkBox2 = findViewById<CheckBox>(R.id.checkBox2)
         var checkBox3 = findViewById<CheckBox>(R.id.checkBox3)
-
+        var textView3 = findViewById<TextView>(R.id.textView3)
         var button = findViewById<Button>(R.id.button)
 
         button.setOnClickListener{
@@ -33,8 +34,18 @@ class RadioButtonAndCheckButtons : AppCompatActivity() {
 
                 else -> "medium"
             }
+            var toppings = ArrayList<String>()
+            if(checkBox1.isChecked){
+                toppings.add(checkBox1?.text.toString())
+            }
+            if(checkBox2.isChecked){
+                toppings.add(checkBox2?.text.toString())
+            }
+            if(checkBox3.isChecked){
+                toppings.add(checkBox3?.text.toString())
+            }
 
-            
+            textView3.text = "You selected $size size pizza with ${toppings.joinToString(", ")} toppings"
 
         }
 

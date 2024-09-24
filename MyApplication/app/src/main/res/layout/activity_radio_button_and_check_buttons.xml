@@ -12,6 +12,7 @@
     >
 
     <TextView
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Size"
@@ -105,4 +106,12 @@
         android:backgroundTint="#FF0000"
         />
 
+    <TextView
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        />
 </LinearLayout>

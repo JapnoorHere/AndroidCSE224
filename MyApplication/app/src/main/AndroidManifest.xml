@@ -13,8 +13,17 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".Consytraint"
-            android:exported="false" />
+            android:name=".ListView"
+            android:exported="true" />
+        <activity
+            android:name=".CA"
+            android:exported="true" />
+        <activity
+            android:name=".GridLayout"
+            android:exported="true" />
+        <activity
+            android:name=".Constraint"
+            android:exported="true" />
         <activity
             android:name=".RadioButtonAndCheckButtons"
             android:exported="true" />
