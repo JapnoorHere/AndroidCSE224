@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".SecondIntent"
+            android:exported="false" />
+        <activity
+            android:name=".FirstIntent"
+            android:exported="true" />
+        <activity
+            android:name=".CalculatorSpinner"
+            android:exported="true" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="true" />
+        <activity
             android:name=".ListView"
             android:exported="true" />
         <activity
@@ -29,7 +41,7 @@
             android:exported="true" />
         <activity
             android:name=".Calculator"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Lecture3RelativeLayout"
             android:exported="true" />
