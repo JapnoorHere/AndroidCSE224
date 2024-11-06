@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".CustomDialog"
+            android:exported="true" />
+        <activity
+            android:name=".RatingActivity"
+            android:exported="false" />
+        <activity
             android:name=".AlertDialogFirst"
             android:exported="true" />
         <activity
